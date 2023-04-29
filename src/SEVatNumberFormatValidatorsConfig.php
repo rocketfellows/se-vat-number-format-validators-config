@@ -1,21 +1,22 @@
 <?php
 
-// TODO: namespace
+namespace rocketfellows\SEVatNumberFormatValidatorsConfig;
 
 use arslanimamutdinov\ISOStandard3166\Country;
 use arslanimamutdinov\ISOStandard3166\ISO3166;
 use rocketfellows\CountryVatFormatValidatorInterface\CountryVatFormatValidatorInterface;
+use rocketfellows\SEVatFormatValidator\SEVatFormatValidator;
 use rocketfellows\SpecificCountryVatNumberFormatValidatorsConfig\SpecificCountryVatNumberFormatValidatorsConfig;
 
-class CountryVatNumberFormatValidatorsConfig extends SpecificCountryVatNumberFormatValidatorsConfig
+class SEVatNumberFormatValidatorsConfig extends SpecificCountryVatNumberFormatValidatorsConfig
 {
     public function getCountry(): Country
     {
-        return ISO3166::COUNTRY();
+        return ISO3166::SE();
     }
 
     protected function getDefaultValidator(): CountryVatFormatValidatorInterface
     {
-        return new CountryVatFormatValidator();
+        return new SEVatFormatValidator();
     }
 }
