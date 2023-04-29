@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682786686">
-  <project timestamp="1682786686">
+<coverage generated="1682787293">
+  <project timestamp="1682787293">
     <file name="/app/src/SEVatNumberFormatValidatorsConfig.php">
       <class name="rocketfellows\SEVatNumberFormatValidatorsConfig\SEVatNumberFormatValidatorsConfig" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
